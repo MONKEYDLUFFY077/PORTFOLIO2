@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jaswanth Kumar | Frontend Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio website of Jaswanth Kumar showcasing web development projects, skills, experience, and contact information."
+  />
+  <meta
+    name="keywords"
+    content="Frontend Developer, Portfolio, HTML5, CSS3, JavaScript, Web Developer"
+  />
+  <meta name="author" content="Jaswanth Kumar" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Jaswanth Kumar Portfolio" />
+  <meta
+    property="og:description"
+    content="Accessible and semantic portfolio website built with HTML5."
+  />
+  <meta property="og:type" content="website" />
+    
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <header role="banner">
+    <div class="container">
+      <h1>Jaswanth Kumar</h1>
+
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h2>
+        Building Modern Accessible Experiences
+      </h2>
+
+      <p>
+        Frontend developer focused on responsive
+        architecture, accessibility, and performance.
+      </p>
+
+      <a href="projects.html" class="button">
+        Explore Projects
+      </a>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="images/profile.jpg"
+        alt="Portrait of Jaswanth Kumar"
+      />
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section
+    aria-labelledby="projects-title"
+    class="container"
+  >
+
+    <h2 id="projects-title">
+      Featured Projects
+    </h2>
+
+    <div class="projects-grid">
+
+      <article class="card">
+
+        <h3>
+          Anime Streaming Platform
+        </h3>
+
+        <p>
+          API-driven anime discovery interface with
+          responsive layouts and accessibility support.
+        </p>
+
+        <div class="card-footer">
+          <span>HTML • CSS • JS</span>
+
+          <a href="#" class="button">
+            View
+          </a>
+        </div>
+
+      </article>
+
+      <article class="card">
+
+        <h3>
+          Accessibility Dashboard
+        </h3>
+
+        <p>
+          WCAG-compliant admin dashboard optimized
+          for Lighthouse performance and SEO.
+        </p>
+
+        <div class="card-footer">
+          <span>Accessibility</span>
+
+          <a href="#" class="button">
+            View
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+<section
+  class="todo-section container"
+  aria-labelledby="todo-title"
+>
+
+  <div class="section-heading">
+    <h2 id="todo-title">
+      Task Management Application
+    </h2>
+
+    <p>
+      Interactive JavaScript To-Do application with
+      CRUD operations, filtering, and persistent storage.
+    </p>
+  </div>
+  <form
+    id="todo-form"
+    class="todo-form"
+    aria-label="Add Task Form"
+  >
+
+    <label for="task-input">
+      Add New Task
+    </label>
+
+    <div class="todo-input-group">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Enter task..."
+        required
+      />
+      <button type="submit">
+        Add
+      </button>
+    </div>
+  </form>
+
+  <div
+    class="filters"
+    role="group"
+    aria-label="Filter Tasks"
+  >
+    <button
+      class="filter-btn active"
+      data-filter="all"
+    >
+      All
+    </button>
+
+    <button
+      class="filter-btn"
+      data-filter="active"
+    >
+      Active
+    </button>
+
+    <button
+      class="filter-btn"
+      data-filter="completed"
+    >
+      Completed
+    </button>
+  </div>
+  <ul
+    id="task-list"
+    class="task-list"
+    aria-live="polite"
+  ></ul>
+</section>
+</main>
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2026 Jaswanth Kumar. All rights reserved.
+      </p>
+
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+<script src="todo.js"></script>
+</body>
+</html>
